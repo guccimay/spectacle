@@ -1,4 +1,7 @@
 <html>
+<style> HTML,BODY{cursor: url("http://downloads.totallyfreecursors.com/cursor_files/rose1.ani"),
+url("http://downloads.totallyfreecursors.com/thumbnails/rose1.gif"), auto;}</style>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -25,6 +28,38 @@
     $( "#draggable" ).draggable();
   });
   </script>
+  <script type="text/javascript">
+
+  		window.addEventListener("load", function() {
+
+  			var c, a = document.getElementById("drawingspace");
+  			a.width = window.innerWidth;
+  			a.height = window.innerHeight;
+  			var e = !1;
+  			c = a.getContext("2d");
+
+  			a.addEventListener("mousemove", function(b) {
+  				var a, d;
+  				if (b.layerX || 0 == b.layerX) a = b.layerX, d = b.layerY;
+  				else if (b.offsetX || 0 == b.offsetX) a = b.offsetX, d = b.offsetY;
+  				c.lineCap = "butt";
+  				c.lineWidth = 1;
+  				c.strokeStyle = "black";
+  				e ? (c.lineTo(a, d), c.stroke()) : (c.beginPath(), c.moveTo(a, d), e = !0)
+  			}, !1)
+
+  			a.addEventListener("click", function(b) {
+  				c.clearRect(0,0,a.width, a.height);
+  				c.beginPath();
+  			}, !1)
+
+  		}, !1);
+  		var stateCount = 0;
+
+  		(function(window,undefined){
+  	    	});
+
+  </script>
 </head>
 
 
@@ -37,8 +72,13 @@
     </h3>
     </ul>
 
+
+    <canvas id="drawingspace" width="100%" height="400%" overflow-y="scroll"
+    style="position:fixed; z-index:0;"> </canvas>
+
+
   <div id="draggable" class="ui-widget-content" style="box-shadow: 5px 5px 5px pink">
-    <p>send me stuff at mkim09@mica.edu!</p>
+    <p>send me your spectacle at mkim09@mica.edu!</p>
   </div>
 
 
