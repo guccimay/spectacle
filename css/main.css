@@ -4,6 +4,7 @@
   position: absolute;
   bottom:0;
   width:40%;
+  overflow: hidden;
   height:50px;
   left:10px;
   top:10px;
@@ -111,6 +112,24 @@ a {
   text-decoration: none;
   color: black;
 }
+
+#ref1
+{color: red;}
+
+#ref2
+{color: red;}
+#ref3
+{color: red;}
+#ref4
+{color: red;}
+#ref5
+{color: red;}
+#ref6
+{color: red;}
+#ref7
+{color: red;}
+#ref8
+{color: red;}
 
 .currentPage
 {border-bottom: 1px solid;
